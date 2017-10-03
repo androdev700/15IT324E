@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.androdev.a15it324e.ex5.AndroidScreenUILayouts">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Hello World" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Press Me!" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp">
+
+        <TableRow>
+
+            <TextView
+                android:width="120dp"
+                android:text="User Name:" />
+
+            <EditText
+                android:id="@+id/txtUserName"
+                android:width="200dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="Password:" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:inputType="textPassword" />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/chkRememberPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Remember Password" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/buttonSignIn"
+                android:text="Log In" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
