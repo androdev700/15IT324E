@@ -1,5 +1,6 @@
 package com.androdev.a15it324e.ex12;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -23,6 +24,7 @@ public class MapsAndLocationServices extends AppCompatActivity implements OnMapR
     @Override
     public void onMapReady(GoogleMap map) {
         map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        map.setTrafficEnabled(true);
         map.getUiSettings().setZoomControlsEnabled(true);
         map.getUiSettings().setCompassEnabled(true);
         map.getUiSettings().setMyLocationButtonEnabled(true);

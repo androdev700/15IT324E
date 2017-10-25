@@ -43,6 +43,5 @@ public class DataStorageInSharedPreferences extends AppCompatActivity {
                 editText.setText("");
             }
         });
-
     }
 }
